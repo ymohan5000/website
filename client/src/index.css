@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-surface-dark text-slate-100 antialiased;
+    background-color: #0F172A;
+    color: #F8FAFC;
+  }
+  ::selection {
+    @apply bg-primary-500 text-white;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-slate-950/70 backdrop-blur-xl border border-slate-800/80;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-[12px] bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-semibold hover:opacity-95 transition-all shadow-2xl shadow-primary-500/20;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-[12px] border border-primary-500/20 text-white bg-white/5 hover:bg-primary-500/10 transition-all;
+  }
+  .card {
+    @apply bg-surface-card border border-surface-border rounded-[20px] p-6 shadow-xl shadow-black/20 transition-all duration-300;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-display font-bold mb-4 text-white;
+  }
+  .section-subtitle {
+    @apply text-slate-300 text-lg max-w-2xl;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+}
+
+@layer utilities {
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+}
